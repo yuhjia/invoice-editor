@@ -18,6 +18,16 @@ class ItemsTable extends React.Component {
     });
   }
 
+  handleChange(data, idx, type) {
+    if (type === 'edit') {
+      this.props.actions.updateItem(data, idx);
+    } else if (type === 'delete') {
+      this.props.actions.removeItem(data, idx);
+    } else if (type === 'add') {
+      this.props.actions.addItem(data, idx);
+    }
+  }
+
   render() {
     return <div>
       <ItemsTableHeader />
@@ -25,7 +35,7 @@ class ItemsTable extends React.Component {
           <ItemRow key={ idx }
             idx={ idx }
             data={ item }
-            onChange={ (data, type) => this.props.onChange(data, idx, type) }
+            onChange={ (data, type) => this.handleChange(data, idx, type) }
             onClick={ () => this.handleEditRow(idx) }
             editMode={ this.state.currRow === idx ? true : false}
           />)
