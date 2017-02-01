@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  width: 100%;
+}
+
+.col-text {
+  width: 24%;
+  margin: 5px 0;
+}
+
+.col-icon {
+  width: 2%;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.edit-box {
+  width: 95%;
+}
+
+.editable-text {
+  cursor: pointer;
+}

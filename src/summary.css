@@ -1,0 +1,17 @@
+.summary {
+  width: 360px;
+  float: right;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-left: none;
+  border-right: none;
+}
+
+.subtotal {
+  display: flex;
+  padding: 5px 0;
+}
+
+.label {
+  width: 50%;
+}
