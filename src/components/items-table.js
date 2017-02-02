@@ -47,10 +47,10 @@ class ItemsTable extends React.Component {
 const ItemsTableHeader = () => <div className="header">
     <div className="col-icon"></div>
     <div className="col-text">Item</div>
-    <div className="col-text">Qty</div>
-    <div className="col-text">Price</div>
-    <div className="col-text">Total</div>
+    <div className="col-number">Qty</div>
+    <div className="col-number">Price</div>
+    <div className="col-number">Total</div>
     <div className="col-icon"></div>
-  </div>
+  </div>;
 
 export default ItemsTable;

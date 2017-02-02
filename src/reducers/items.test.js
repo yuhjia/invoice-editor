@@ -39,14 +39,14 @@ describe('items reducer', () => {
     expect(
       items([
         {
-        name: 'cog',
-        qty: 2,
-        price: 15
-      }, {
-        name: 'widget',
-        qty: 1,
-        price: 31.98
-      }
+          name: 'cog',
+          qty: 2,
+          price: 15
+        }, {
+          name: 'widget',
+          qty: 1,
+          price: 31.98
+        }
       ], {
         type: ActionTypes.REMOVE_ITEM,
         idx: 1,
@@ -58,21 +58,21 @@ describe('items reducer', () => {
         qty: 2,
         price: 15
       }
-    ])
-  })
+    ]);
+  });
 
   it('should handle UPDATE_ITEM', () => {
     expect(
       items([
         {
-        name: 'cog',
-        qty: 2,
-        price: 15
-      }, {
-        name: 'widget',
-        qty: 1,
-        price: 31.98
-      }
+          name: 'cog',
+          qty: 2,
+          price: 15
+        }, {
+          name: 'widget',
+          qty: 1,
+          price: 31.98
+        }
       ], {
         type: ActionTypes.UPDATE_ITEM,
         idx: 1,
@@ -92,7 +92,7 @@ describe('items reducer', () => {
         qty: 1,
         price: 32.98
       }
-    ])
-  })
+    ]);
+  });
 
 });

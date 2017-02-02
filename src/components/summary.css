@@ -13,5 +13,10 @@
 }
 
 .label {
+  width: 40%;
+}
+
+.number {
   width: 50%;
+  text-align: right;
 }
